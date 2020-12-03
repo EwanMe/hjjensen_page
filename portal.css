@@ -1,88 +1,154 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);
 
 body {
-  width: 100%;
-  text-align: center;
   font-family: 'Open Sans', sans-serif;
-  margin-left: 0;
+  background-color: #eee;
+}
+
+#menu {
+  background: #aaa;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    max-width: 600px;
+  }
+}
+
+.container {
+  background: #aaa;
+  overflow: hidden;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -webkit-transform-origin: 100% 100%;
+  transition: background .5s;
+  -moz-transition: background .5s;
+  -webkit-transition: background .5s;
+  -o-transition: background .5s;
+  -ms-transition: background .5s;
+}
+
+.container:hover {
+  background: #eee
+}
+
+.container-1 {
+  z-index: 1;
+  transform: rotate(90deg);
+  -moz-transform: rotate(90);
+  -webkit-transform: rotate(90);
+}
+
+.container-2 {
+  z-index: 2;
+  transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+
+.container-3 {
+  z-index: 3;
+  transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+}
+
+.container-4 {
+  z-index: 4;
+  transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+#wrapper {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -webkit-transform-origin: 100% 100%;
+}
+
+.container-1 .content {
+  left: -10px;
+  top: 15px;
+  transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.container-2 .content {
+  left: -11px;
+  top: 16px;
+  transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+}
+
+.container-3 .content {
+  left: -7px;
+  top: 12px;
+  transform: rotate(-270deg);
+  -moz-transform: rotate(-270deg);
+  -webkit-transform: rotate(-270deg);
+}
+
+.container-4 .content {
+  left: -5px;
+  top: 18px;
+  transform: rotate(-360deg);
+  -moz-transform: rotate(-360deg);
+  -webkit-transform: rotate(-360deg);
+}
+
+.content,
+.content a {
+  width: 100%;
+  height: 100%;
+  text-align: center
 }
 
 .content {
-  max-width: 50%;
-  display: inline-block;
-  text-align: left;
+  position: absolute;
 }
 
-/* ----- NAVBAR ----- */
-
-.navbar {
-  width: 100%;
-  background-color: #100560;
-  font-size: 16px;
-}
-
-#navlist {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#navlist li {
-  display: inline;
-}
-
-.nav-item, .nav-item>a:link, .nav-item>a:visited, .nav-item>a:hover, .nav-item>a:active {
-  color: white;
+.content a {
+  line-height: 100px;
+  display: block;
+  position: absolute;
   text-decoration: none;
+  font-size: 20px;
 }
 
-/* ----- DROPDOWN ----- */
-
-/* Dropdown Button */
-nav button {
- background-color: inherit;
- padding: 16px;
- font-size: 18px;
- border: none;
- font-family: 'Open Sans', sans-serif;
- cursor: pointer;
+a {
+  line-height: 200px;
+  display: block;
+  position: absolute;
+  text-decoration: none;
+  font-size: 20px;
+  color: #101010;
 }
 
-/* The container <div> - needed to position the dropdown content */
-.assignments {
- position: relative;
- display: inline-block;
+a:visited {
+  color: #101010;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.assignments-content {
- display: none;
- position: absolute;
- background-color: #f1f1f1;
- min-width: 160px;
- box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
- z-index: 1;
+a:hover {
+
 }
 
-/* Links inside the dropdown */
-.assignments-content a {
- color: black;
- padding: 12px 16px;
- text-decoration: none;
- display: block;
+a:active {
+
 }
-
-/* Change color of dropdown links on hover */
-.assignments-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.assignments:hover .assignments-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-nav button:hover{
-  background-color: #202580;
-}
-/* ---- DROPDOWN END ---- */
-/* ----- NAVBAR END ----- */
