@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tax form</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <form action="http://folk.ntnu.no/michaedm/norwegian-tax-administration/receive.php" method="post">
+        <fieldset>
+          <legend>Tax form</legend>
+          <label for="realnameid">Real Name</label><br>
+            <input id="realnameid" type="text" name="realname" placeholder="Peter Parker" required><br>
+
+          <label>Male
+            <input type="radio" name="gender" value="Male" checked required>
+          </label>
+          <label>Female
+            <input type="radio" name="gender" value="Female" required>
+          </label>
+          <br>
+
+          <label for="emailid">Email</label><br>
+            <input id="emailid" type="text" name="email" placeholder="spinning@web.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+          <br>
+
+          <label for="birthid">Birthdate</label><br>
+            <input id="birthid" type="date" name="birthdate" max="1988-12-31" required>
+          <br>
+
+          <label for="heroid">Hero name</label><br>
+            <input id="heroid" type="text" name="heroname" placeholder="Spider-Man" required>
+          <br>
+
+          <label for="spandexid">Do you wear spandex?</label>
+            <input type="hidden" name="spandex" value="false">
+            <input id="spandexid" type="checkbox" name="spandex" value="true">
+          <br>
+
+          <label for="str">Strength</label><br>
+            <select id="str" name="strength">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          <br>
+
+          <label for="spe">Speed</label><br>
+            <select id="spe" name="speed">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          <br>
+
+          <label for="int">Intelligence</label><br>
+            <select id="int" name="intelligence">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          <br>
+
+          <label for="inc">Income</label><br>
+            <input id="inc" type="number" name="income" min="0" step="1" onchange="calculateTax()">
+            <br>
+
+          <label for="wlt">Wealth</label><br>
+            <input id="wlt" type="number" name="wealth" min="0" step="1" onchange="calculateTax()">
+            <br>
+
+          <label for="tx">Tax</label><br>
+            <input id="tx" type="number" name="tax" value=0 readonly>
+          <!-- I could have used an output tag here, but chose to use the input with
+          readonly. It's because it doesn't require additional styling to have it the same appearence
+          as the rest, which was my preference. -->
+          <input type="submit" value="Submit tax form">
+        </fieldset>
+      </form>
+      <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="wishlist_style.css">
+    <title>Wishlist</title>
+  </head>
+  <body>
+    <form class="form" id="list" onsubmit="addItem(); this.reset(); return false" method="post">
+      <fieldset>
+        <legend>Specify item</legend>
+        <label for="item">Item</label><br>
+        <input type="text" id="item" name="item" autofocus required><br>
+        <label for="type">Type</label><br>
+        <input type="text" id="type" name="type"><br>
+        <label for="price">Price</label><br>
+        <input type="number" id="price" name="price"><br>
+        <button type="submit" id="submit" name="submit">Add item</button>
+      </fieldset>
+    </form>
+
+    <div class="wishlist-wrapper">
+      <table id="wishlist">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Type</th>
+            <th>Price</th>
+            <th class="empty-cell"></th>
+          </tr>
+        </thead>
+        <tbody class="wishlist-body" id="wishlist-body">
+
+        </tbody>
+      </table>
+    </div>
+
+    <script src="wishlist.js"></script>
+  </body>
+</html>

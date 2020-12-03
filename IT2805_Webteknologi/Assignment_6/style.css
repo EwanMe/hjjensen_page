@@ -1,0 +1,46 @@
+*{
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 16px;
+}
+
+legend{
+  font-size: 26px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  color: #008262;
+}
+
+form{
+  width: 25%;
+  margin-top: 20px;
+  margin-left: 75px;
+}
+
+label{
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 16px;
+
+}
+
+input, select{
+  margin-top: 3px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+input[type=text], select, input[type=number], input[type=date]{
+  width: 300px;
+  padding: 5px;
+  background-color: #eeeeee;
+}
+
+input[type=submit]{
+  background-color: #008262;
+  color: white;
+  padding: 10px;
+  margin-bottom: 2px;
+}

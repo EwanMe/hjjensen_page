@@ -1,0 +1,5 @@
+Questions 4
+
+1. Mobile devices usually ignore auto play on videos to save the user's bandwidth and data usage.
+2. The logo will display.
+3. With a responsive website you only need to make and maintain one web site, you avoid redirection, which saves load time, and it gives a consistent experience across platforms.

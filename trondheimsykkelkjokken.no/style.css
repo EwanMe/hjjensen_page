@@ -1,0 +1,65 @@
+body{
+  background-color: #a6d2d5;
+  font-family: "Myriad Pro", sans-serif;
+  margin: 0;
+}
+
+.content{
+  text-align: center;
+}
+
+.content div{
+  display: inline-block;
+  text-align: left;
+  max-width: 50%;
+}
+
+.logo{
+  height: 75px;
+  vertical-align: middle;
+}
+
+.navbar{
+  background-color: #fcf6d2;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.navbar ul{
+  list-style: none;
+}
+
+.navbar ul li{
+  display: inline;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.navbar a:link{
+  color: #707070;
+}
+
+.navbar a:visited{
+  color: #707070;
+}
+
+.navbar a:hover{
+  color: #000000;
+}
+
+.navbar a:active{
+  color: #a6d2d5;
+}
+
+.navbar a{
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+footer{
+  background-color: #efa26f;
+}

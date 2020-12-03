@@ -1,0 +1,13 @@
+1. To work in 3D, you will need a WebGL context. You get this with get getContext('webgl').
+2. I would make a blue circle using the arc-method with angle from 0 to 360 degrees. I would use the following code, given we have a 2d context named 'context'.
+
+    context.beginPath();
+    context.arc(x-coordinate, y-coordinate, radius, 0, 360, false);
+    context.fillStyle="blue";
+    context.fill();
+    context.closePath();
+
+3. A shorter way of writing the code would be:
+
+    const countries = ['Norway', 'Sweden', 'Denmark', 'New Zealand'];
+    const countriesStartingWithN = countries.filter(country => country.startsWith('N'));

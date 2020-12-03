@@ -1,0 +1,4 @@
+Questions 3
+1.	postition: fixed is in relation to the browser window and will stay on the same place of the page,
+	whereas position: absolute is relative to the content of the page.
+2.	We would use nth-child pseudo-class like this: element:nth-child(0n+3).

@@ -1,0 +1,64 @@
+* {
+  font-family: 'PT Serif', serif;
+  font-size: 16px;
+  color: #02020b;
+  background-color: #eeeeee;
+}
+
+fieldset {
+  width: 20em;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #d36135;
+  margin: 0 0 10px 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+input {
+  border-radius: 3px;
+  border-color: #cdcdcd;
+  width: 15em;
+  padding: 4px;
+  margin: 10px;
+}
+
+#submit {
+  color: #eeeeee;
+  background-color: #d36135;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 2px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 10px;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid black;
+  width: 10em;
+  padding: 4px;
+}
+
+th {
+  background-color: #d36135;
+  color: #eeeeee;
+}
+
+tbody > tr:nth-child(2n) > td {
+  background-color: #e6aa68;
+}
+
+.empty-cell {
+  border: 0 none;
+  background-color: #eeeeee !important;
+}

@@ -1,0 +1,52 @@
+.user-icon {
+  background: #03527b;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 10px solid #03527b;
+}
+
+.user-icon::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  display: inline-block;
+  top: 15px;
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 25px);
+}
+
+.user-icon::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  top: 75px;
+  border-radius: 50%;
+  left: calc(50% - 50px);
+}
+
+.wifi-icon {
+  padding: 20px;
+}
+
+.wifi-icon, .wifi-icon::before {
+  display: inline-block;
+  border: 60px double transparent;
+  border-top-color: #000;
+  border-radius: 50%;
+}
+
+.wifi-icon::before {
+  content: "";
+  width: 0;
+  height: 0;
+}

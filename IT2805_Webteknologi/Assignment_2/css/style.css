@@ -1,0 +1,26 @@
+body {
+    background-color: #cbd5f0;
+    color: #194f92;
+}
+h1, h2 {
+    font-family: Georgia, Times New Roman, serif;
+    font-weight: bold;
+}
+h1 {
+    font-size: 30pt;    
+}
+h2 {
+    font-size: 20pt;
+}
+p, ol {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 11pt;
+}
+img {
+    width: 150px;
+    height: 150px;
+    border-width: 5px;
+    border-color: white;
+    border-style: solid;
+}

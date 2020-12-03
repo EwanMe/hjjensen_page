@@ -1,0 +1,6 @@
+1.  Due to JavaScripts binary encoding, decimal numbers cannot be represented perfectly, and thus 0.1+0.2===0.30000000000000004 in JS.
+2.  The GET method asks a server for a given resource and sends an empty body.
+    The POST method is used when the data provided in the HTML is accounted for in the request. The data is not appended to the URL.
+3.  The GET method sends an empty body, and therefore the data is appended in the URL
+4.  With only HTML5/JavaScript validation you have no server-side validation. This is validation after the data is sent, and makes sure no incorrect or malicious data has made it's way through somehow.
+5.  Textarea is used when longer text inputs with possibility for breaks are required and/or needs to contain text content child elements.
