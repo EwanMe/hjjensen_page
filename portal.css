@@ -20,9 +20,6 @@ body {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: #92DCE5;
   overflow: hidden;
   position: absolute;
@@ -94,13 +91,38 @@ body {
   -webkit-transform: rotate(-360deg);
 }
 
-a {
+.content, .content a {
+  width: 100%;
+  height: 100%;
+  text-align: center
+}
+
+.content a {
   display: block;
-  position: relative;
+  position: absolute;
   text-decoration: none;
-  text-align: center;
   font-size: 3vh;
   color: #101010;
+}
+
+.container-1 a {
+  top: 50%;
+  right: 10%;
+}
+
+.container-2 a {
+  top: 25%;
+  right: 10%;
+}
+
+.container-3 a {
+  top: 25%;
+  left: 10%; 
+}
+
+.container-4 a {
+  top: 50%;
+  left: 10%;
 }
 
 a:visited {
